@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Intertactive Fun</h1>
+      </div>
+      <div class="article">
+        <p class="intro">
+          This Interactive page is designed to show off all the skills I have
+          learned in this course. From buttons that bounce to pictures that
+          slide and even more.
+        </p>
+        <div class="games">
+          <div class="color">
+            <h2 id="h2">Favorite Color<span id="colorOutput"></span></h2>
+            <!--Favorite Color is a range sliding option to show how a input type range and js work together-->
+            <div class="container">
+              <label>Red:</label>
+              <input type="range" id="rangeRed" value="0" min="0" max="255" />
+              <br />
+              <label>Green:</label>
+              <input
+                type="range"
+                id="rangeGreen"
+                value="59"
+                min="0"
+                max="255"
+              />
+              <br />
+              <label>Blue:</label>
+              <input
+                type="range"
+                id="rangeBlue"
+                value="111"
+                min="0"
+                max="255"
+              />
+            </div>
+          </div>
+          <div class="counter">
+            <!--Counter shows how a button can count but the button also bounces as a jump back to some of the first assignments I did-->
+            <button class="counterButton" onclick="btnPressed()">
+              Counter
+            </button>
+            <p>Count: <a id="count">0</a></p>
+          </div>
+          <div class="submit">
+            <!--This will utilize the submision and apon submiting it should popup saying same here-->
+            <h2>What is your favorite food<span id="foodOutput"></span></h2>
+            <form name="food" method="dialog" onsubmit="return validateForm()">
+              Favorite Food:
+              <input type="text" id="favfood" name="favfood" required />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="aside">
+        <div class="album">
+          <!--This is where 5 pictures will be placed and can slide through them at choice or on users own-->
+          <h3>Pictures</h3>
+          <div id="slider">
+            <ul id="slideWrap">
+              <li>
+                <img src="Images/pexels-dids-5071339.jpg" alt="" />
+              </li>
+              <li>
+                <img src="Images/pexels-francesco-ungaro-5129770.jpg" alt="" />
+              </li>
+              <li>
+                <img src="Images/pexels-joshua-miranda-4399350.jpg" alt="" />
+              </li>
+              <li>
+                <img
+                  src="Images/pexels-merlin-lightpainting-7066438.jpg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img src="Images/pexels-tim-mossholder-9398275.jpg" alt="" />
+              </li>
+            </ul>
+            <!--Using the syntax button as when i used <a> while the buttons looked way nicer, they jumped you to the top of page. Need to reevaluate this-->
+            <button id="prev" href="#">&#8810;</button>
+            <button id="next" href="#">&#8811;</button>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="about">
+          This project was done to display my skills I have learned in the first
+          couse of the class
+        </p>
+        <a class="btn--about" href="about.html">About</a>
+      </footer>
+    </div>
+  </body>
+</html>
