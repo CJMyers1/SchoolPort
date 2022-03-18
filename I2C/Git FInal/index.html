@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <!-- Udpated FavIcon -->
+    <link rel="icon" type="image/png" href="clock-favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Toggle -->
+    <div class="background-toggles" title="Change Background">
+        <div class="background-1" onclick="changeBackground('1')"></div>
+        <div class="background-2" onclick="changeBackground('2')"></div>
+        <div class="background-3" onclick="changeBackground('3')"></div>
+        <div class="background-4" onclick="changeBackground('4')"></div>
+    </div>
+    <!-- Clock container -->
+    <div class="clock" >
+        <div class="clock-face">
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+        </div>
+    </div>
+    <!-- clock button change -->
+    <button class="clock-type">Digital</button>
+    <!-- Analog Clock -->
+    <div id="digital-clock" hidden>
+        <!-- Days for clock -->
+        <div class="days">
+            <div class="day">
+              <p class="monday">monday</p>
+            </div>
+            <div class="day">
+              <p class="tuesday">tuesday</p>
+            </div>
+            <div class="day">
+              <p class="wednesday">wednesday</p>
+            </div>
+            <div class="day">
+              <p class="thursday">thursday</p>
+            </div>
+            <div class="day">
+              <p class="friday">friday</p>
+            </div>
+            <div class="day">
+              <p class="saturday">saturday</p>
+            </div>
+            <div class="day">
+              <p class="sunday">sunday</p>
+            </div>
+          </div>
+        </div>
+        <!-- Time for clock -->
+        <div class="time" hidden >
+            <!-- Hours -->
+            <div class="numbers">
+                <p class="hours"></p>
+                <p class="placeholder">88</p>
+            </div>
+            <div class="colon">
+                <p>:</p>
+            </div>
+            <!-- Minutes -->
+            <div class="number">
+                <p class="minutes"></p>
+                <p class="placeholder">88</p>
+            </div>
+            <div class="colon">
+                <p>:</p>
+            </div>
+            <!-- Seconds -->
+            <div class="number">
+                <p class="seconds"></p>
+                <p class="placeholder">88</p>
+            </div>
+            <!-- AM/PM -->
+            <div class="am-pm">
+                <div>
+                    <p class="am">am</p>
+                </div>
+                <div>
+                    <p class="pm">pm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
