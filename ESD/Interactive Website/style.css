@@ -1,0 +1,129 @@
+:root {
+  --color-bg: rgba(0, 59, 111);
+  --color-text-main: white;
+  --image-max-width: 400px;
+}
+body {
+  background-color: var(--color-bg);
+  display: grid;
+  text-align: center;
+  margin: 10%;
+}
+.header {
+  padding: auto;
+  border-bottom: 3px dashed rgba(60, 112, 0);
+  margin-top: -5rem;
+}
+.fun {
+  background-image: url(Images/webs.jpeg);
+}
+h1 {
+  color: white;
+}
+.about1 {
+  font-size: 28px;
+  color: white;
+}
+.article .intro {
+  justify-content: space-around;
+  color: white;
+  font-size: 28px;
+}
+.games .color {
+  border: 2px rgba(112, 0, 60) solid;
+  padding-bottom: 10px;
+}
+.color #h2 {
+  color: white;
+}
+.container {
+  background-color: rgba(255, 255, 255);
+}
+.counter {
+  padding-top: 10px;
+}
+.counterButton {
+  font-size: 3rem;
+  size: 3rem;
+  background-color: yellowgreen;
+}
+.counter p {
+  font-size: 30px;
+  color: rgba(60, 112, 0);
+}
+.submit {
+  color: white;
+  font-size: 20px;
+}
+.aside {
+  margin-top: 30px;
+}
+h3 {
+  color: white;
+  text-decoration: underline;
+}
+.album {
+  justify-content: space-evenly;
+}
+#slider {
+  position: relative;
+  width: 500px;
+  height: 265px;
+  overflow: hidden;
+  box-shadow: 10px 0 60px rgba(0, 0, 0, 0.3);
+}
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+
+  float: left;
+}
+#slider ul li img {
+  width: 500px;
+  height: 265px;
+}
+#slider #prev,
+#slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+#slider #prev:hover,
+#slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+.footer {
+  border-top: 2px rgba(112, 0, 60) dotted;
+  margin-top: 20px;
+  color: white;
+}
+.btn--about {
+  text-decoration: none;
+  color: deeppink;
+}
