@@ -1,0 +1,46 @@
+:root {
+  --color-bg: rgba(0 139 168);
+  --color-text-main: black;
+  --image-max-width: 400px;
+}
+
+body {
+  background-color: var(--color-bg);
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: fit-content;
+  margin: 10%;
+}
+.container {
+  padding: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+img {
+  padding-top: 3rem;
+}
+.instruction {
+  font-size: 24px;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+label {
+  font-size: 1.5rem;
+}
+.largeredbutton {
+  margin-top: 1.8rem;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  background-color: red;
+  box-shadow: 5px 5px black;
+}
+p {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+p #clicks {
+  font-size: 3rem;
+}
