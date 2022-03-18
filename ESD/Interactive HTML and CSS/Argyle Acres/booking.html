@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Casper Myers" />
+    <link rel="icon" href="Images/Icon.png" />
+    <title>Argyle Acres</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+    <header class="header">
+      <img
+        src="https://cdn.glitch.com/c1a7779a-fd38-4396-9b05-251982555a4b%2Fheadlogo.png?v=1632512277002"
+        class="logo"
+        alt="Argyle Acres Logo"
+        title="Click for fun"
+      />
+    </header>
+    <nav class="navigation">
+      <button>
+        <a class="btn--nav" href="index.html">Home</a>
+      </button>
+      <button>
+        <a class="btn--nav" href="rooms.html">Rooms</a>
+      </button>
+      <button>
+        <a class="btn--nav" href="booking.html">Booking</a>
+      </button>
+    </nav>
+    <article class="book">
+      <h2>Bookings</h2>
+      <form class="booking">
+          <label for="checkin">Dates</label>
+          <input type="date" id="checkin">
+          <label for="checkout"></label>
+          <input type="date" id="checkout">
+       </form>
+       <form class="booking">
+           <label for="roomselection">Room</label>
+           <select name="room" id="roomselection">
+               <option value="select">Select Room</option>
+               <option value="sailor">Sailor Suite</option>
+               <option value="hero">Hero Suite</option>
+           </select>
+       </form>
+       <h3>Guest Information</h3>
+       <form class="guestinfo">
+           <label for="guest">Guest Name</label>
+           <input type="text" id="guest" required>
+           <label for="guestnum">Number of Guests</label>
+           <input type="text" id="guestnum" required>
+           <label form="phone">Phone Number</label>
+           <input type="tel" id="phone" name="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required>
+            <input type="submit" value="Click to Book">
+       </form>
+    </aside>
+    </div>
+    <footer>
+      <div class="links"></div>
+      <a class="btn--about" href="about.html">
+        <img src="Images/Icon.png" alt="" />
+        About
+      </a>
+      <p class="signature">Built Sept. 2021 for css html project.</p>
+    </footer>
+  </body>
+</html>
