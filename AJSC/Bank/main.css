@@ -1,0 +1,83 @@
+:root {
+  --primary1: rgb(112, 114, 111);
+  --primary2: rgb(189, 0, 0);
+}
+
+body {
+  text-align: center;
+  background-color: rgb(206, 206, 206);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: var(--primary2);
+  color: white;
+}
+
+.nav {
+  margin-top: -25px;
+  height: 25px;
+  background-color: var(--primary1);
+}
+
+.nav button {
+  border-radius: 20px;
+  margin-top: 2px;
+  background: white;
+  color: var(--primary2);
+}
+
+button:hover {
+  filter: brightness(150%);
+}
+
+.article {
+  display: flex;
+  border: 1px solid black;
+  height: 450px;
+}
+
+.weather {
+  width: 25%;
+  border-right: 1px dashed black;
+  font-size: 14px;
+  padding-top: 7%;
+}
+
+.weather img {
+  width: 100px;
+}
+
+.accountinfo {
+  width: 50%;
+}
+
+.accountinfo .container {
+  border-bottom: 1px dashed black;
+  height: 400px;
+}
+
+.transactions {
+  height: 320px;
+  border-top: 1px dotted black;
+  overflow-y: scroll;
+}
+
+.buttons {
+  margin-top: 5px;
+}
+
+.loans {
+  width: 25%;
+  padding-top: 30px;
+  float: right;
+  border-left: 1px dashed black;
+}
+
+.loans button {
+  background: yellow;
+  font-size: 30px;
+  height: 80px;
+  width: 200px;
+  border-radius: 15px;
+}

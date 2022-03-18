@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header><h1>Bank</h1></header>
+    <div class="nav">
+        <button>Account Summary</button>
+        <button>Bank Info</button>
+        <Button>Customer Support</Button>
+    </div>
+    <div class="article">
+        <div class="weather">
+            <!-- This is where the weather API will display -->
+            <div>
+                <h2>Weather</h2>
+                <p id="condition"></p>
+                <img src="" alt="Weather Icon" id="weather-icon">
+                <p id="temp"></p>
+                <p id="area"></p>
+            </div>
+        </div>
+        <div class="accountinfo">
+            <div class="container">
+                <p name="balance" id="balance-sum"></p>
+                <h3>Transactions</h3>
+                <div class="transactions" id="transactions">
+                    <ul id="statement">
+                    </ul>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="charge" onclick="charge()">Charge</button>
+                <button id="pay" onclick="pay()">Pay</button>
+            </div>
+        </div>
+        <div class="loans">
+            <h2>Loans Here</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut deserunt vel alias, magnam laudantium molestiae debitis porro recusandae fugiat beatae odio repellendus! Mollitia laboriosam quos, atque neque doloribus iure quisquam!</p>
+            <button class="Apply">Apply Now!</button>
+        </div>
+    </div>
+    <footer>
+        <p>This project was designed to demo a basic banking website to show the balance alter based on charges and payments. Only the charge and pay button work for this project.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+</body>
+</html>
