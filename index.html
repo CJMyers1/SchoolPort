@@ -8,23 +8,27 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <h1>Casper Myers Portfolio</h1>
-      <!-- Nav Menu -->
-      <div class="overlay slide-left" id="overlay">
-        <nav>
-          <ul>
-            <li id="nav-1" class="slide-out-1">Home</li>
-            <li id="nav-2" class="slide-out-2">Projects</li>
-            <li id="nav-3" class="slide-out-3">About</li>
-          </ul>
-        </nav>
-      </div>
+    <div class="container">
+      <header class="main-header">
+        <h1>Casper Myers Portfolio</h1>
+        <!-- Nav Menu -->
+        <div class="overlay slide-left slide-right" id="overlay">
+          <nav>
+            <ul>
+              <li id="nav-1" class="slide-out-1"><a href="#home">Home</a></li>
+              <li id="nav-2" class="slide-out-2">
+                <a href="#projects">Projects</a>
+              </li>
+              <li id="nav-3" class="slide-out-3"><a href="">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
       <!-- Nav Bars -->
-      <div class="nav-bars" id="nav-bars">
+      <div class="nav-bars" id="nav-bar">
         <div class="bar1"></div>
-        <div class="bar1"></div>
-        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
       <!-- Home -->
       <section id="home">
@@ -118,7 +122,7 @@
           </ul>
         </div>
       </section>
-      <script src="script.js"></script>
-    </header>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
