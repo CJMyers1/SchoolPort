@@ -156,7 +156,6 @@ h2::before {
   /* background-color: yellow; */
   width: 243px;
   float: left;
-  margin-top: 20px;
 }
 
 .clearfix::after {
