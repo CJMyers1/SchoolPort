@@ -239,6 +239,7 @@ body {
   display: flex;
   align-items: cneter;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
